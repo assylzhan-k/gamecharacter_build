@@ -57,10 +57,10 @@ public class GameCharacterBuilder {
     }
     private void validate() {
         if (name == null || name.isBlank()) {
-            throw new IllegalStateException("Character name cannot be empty");
+            throw new IllegalStateException("Character name cannot be empty!!");
         }
         if (element == null || element.isBlank()) {
-            throw new IllegalStateException("Character must have an element");
+            throw new IllegalStateException("Character must have an element(pyro,electro,hydro,anemo,cryo,geo,dendro)");
         }
         if (level < MIN_LEVEL || level > MAX_LEVEL) {
             throw new IllegalStateException(
@@ -68,7 +68,7 @@ public class GameCharacterBuilder {
             );
         }
         if (health <= 0) {
-            throw new IllegalStateException("Health must be greater than 0");
+            throw new IllegalStateException("Health must be greater than 0, or your character is not alive(0");
         }
         if (attack < 0 || defense < 0) {
             throw new IllegalStateException(
