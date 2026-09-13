@@ -252,41 +252,6 @@ Acts as the client and demonstrates how the Builder Pattern works.
 ```
 ---
 
-# Fluent API
-
-The Builder implements method chaining.
-
-For example:
-
-```java
-public GameCharacterBuilder setName(String name) {
-    this.name = name;
-    return this;
-}
-```
-
-The statement:
-
-```java
-return this;
-```
-
-returns the current Builder object.
-
-Therefore, another method can immediately be called:
-
-```java
-new GameCharacterBuilder()
-        .setName("ai")
-        .setElement("ai")
-        .setWeaponType("ai")
-        .setLevel(67);
-```
-
-This style is called a **fluent API** because the code reads like a sequence of instructions.
-
----
-
 # Builder Pattern Roles
 
 | Builder Pattern Role | Class |
