@@ -9,7 +9,6 @@ public class GameCharacter {
     private final String artifactSet;
     private final String elementalSkill;
     private final String elementalBurst;
-
     public GameCharacter(GameCharacterBuilder builder) {
         this.name = builder.getName();
         this.element = builder.getElement();

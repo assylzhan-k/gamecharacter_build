@@ -26,7 +26,7 @@ public class Main {
         System.out.println(customCharacter);
         GameCharacter customCharacter2 =
                 new GameCharacterBuilder()
-                        .setName("aki")
+                        .setName("Aki")
                         .setElement("cryo")
                         .setWeaponType("catalyst")
                         .setLevel(50)

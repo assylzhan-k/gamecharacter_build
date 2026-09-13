@@ -105,5 +105,4 @@ public class GameCharacterBuilder {
     }
     public String getElementalBurst() {
         return elementalBurst;
-    }
-}
+    }}

@@ -29,7 +29,6 @@ public class CharacterDirector {
                 .setElementalBurst("Rising waters")
                 .build();
     }
-
     public GameCharacter createElectroArcher() {
         return new GameCharacterBuilder()
                 .setName("Flins")
