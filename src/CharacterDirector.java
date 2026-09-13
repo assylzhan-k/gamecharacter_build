@@ -37,8 +37,8 @@ public class CharacterDirector {
                 .setAttack(1900)
                 .setDefense(550)
                 .setArtifactSet("Night of The Sky Unveilling")
-                .setElementalSkill("Ancient Rite: Arcane Light")
-                .setElementalBurst("Ancient Ritual: Cometh the Night")
+                .setElementalSkill("Ancient Rite: Arcane light")
+                .setElementalBurst("Ancient Ritual: Cometh the night")
                 .build();
     }
 }
