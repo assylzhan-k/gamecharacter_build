@@ -48,13 +48,13 @@ game_char/
 The Builder Pattern in this project consists of four main parts:
 
 ```text
-Main (Acts as the client and demonstrates how the Builder Pattern works.)
+Main || (Acts as the client and demonstrates how the Builder Pattern works.)
   │
-CharacterDirector Contains reusable predefined character configurations.)
+CharacterDirector || (Contains reusable predefined character configurations.)
   │
-GameCharacterBuilder (Constructs and validates GameCharacter objects.)
+GameCharacterBuilder || (Constructs and validates GameCharacter objects.)
   │
-GameCharacter (Stores information about the finished character.)
+GameCharacter || (Stores information about the finished character.)
 ```
 ---
 # Builder Pattern Roles
