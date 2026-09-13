@@ -252,16 +252,6 @@ Acts as the client and demonstrates how the Builder Pattern works.
 ```
 ---
 
-# Builder Pattern Roles
-
-| Builder Pattern Role | Class |
-|---|---|
-| Product | `GameCharacter` |
-| Builder | `GameCharacterBuilder` |
-| Director | `CharacterDirector` |
-| Client | `Main` |
-
----
 
 # Technologies Used
 
