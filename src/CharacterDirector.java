@@ -1,5 +1,4 @@
 public class CharacterDirector {
-
     public GameCharacter createPyroSwordsman() {
         return new GameCharacterBuilder()
                 .setName("Aether")
@@ -14,8 +13,7 @@ public class CharacterDirector {
                 .setElementalBurst("Plains scorcher")
                 .build();
     }
-
-    public GameCharacter createHydroMage() {
+    public GameCharacter createHydroSwordchar() {
         return new GameCharacterBuilder()
                 .setName("Lumine")
                 .setElement("Hydro")
@@ -29,7 +27,7 @@ public class CharacterDirector {
                 .setElementalBurst("Rising waters")
                 .build();
     }
-    public GameCharacter createElectroArcher() {
+    public GameCharacter createElectroPolearman() {
         return new GameCharacterBuilder()
                 .setName("Flins")
                 .setElement("Electro")

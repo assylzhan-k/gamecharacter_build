@@ -4,13 +4,13 @@ public class Main {
         GameCharacter pyroCharacter =
                 director.createPyroSwordsman();
         GameCharacter hydroCharacter =
-                director.createHydroMage();
+                director.createHydroSwordchar();
         GameCharacter electroCharacter =
-                director.createElectroArcher();
+                director.createElectroPolearman();
         System.out.println(pyroCharacter);
         System.out.println(hydroCharacter);
         System.out.println(electroCharacter);
-        GameCharacter customCharacter =
+        GameCharacter customCharacter1 =
                 new GameCharacterBuilder()
                         .setName("kazuha")
                         .setElement("anemo")
@@ -23,20 +23,20 @@ public class Main {
                         .setElementalSkill("Chihayaburu")
                         .setElementalBurst("Kazuha slash")
                         .build();
-        System.out.println(customCharacter);
-        GameCharacter customCharacter2 =
+        System.out.println(customCharacter1);
+        GameCharacter aki =
                 new GameCharacterBuilder()
-                        .setName("Aki")
+                        .setName("aki")
                         .setElement("cryo")
                         .setWeaponType("catalyst")
                         .setLevel(50)
-                        .setHealth(15000)
-                        .setAttack(1900)
-                        .setDefense(750)
-                        .setArtifactSet("Desert Pavilion Chronicle")
-                        .setElementalSkill("Chihayaburu")
-                        .setElementalBurst("Kazuha slash")
+                        .setHealth(15)
+                        .setAttack(19)
+                        .setDefense(25)
+                        .setArtifactSet("cold night")
+                        .setElementalSkill("sum cryo powerful skill")
+                        .setElementalBurst("freeze!!")
                         .build();
-        System.out.println(customCharacter2);
+        System.out.println(aki);
     }
 }
