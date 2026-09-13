@@ -219,8 +219,28 @@ private void validate() {
     }
 ```
 
-This prevents invalid characters from being created.
+This prevents the creation of invalid characters like this:
 
+```text
+Name: empty
+Level: -10
+Health: 0
+Attack: -500
+```
+# Avoiding Magic Numbers
+
+Numbers should not be beyond the allowed value. (max, min level)
+
+```java
+if (level < MIN_LEVEL || level > MAX_LEVEL) {
+    throw new IllegalStateException(
+            "Level must be between "
+                    + MIN_LEVEL
+                    + " and "
+                    + MAX_LEVEL
+    );
+}
+```
 ---
 
 ## Single Responsibility and Focused Classes
