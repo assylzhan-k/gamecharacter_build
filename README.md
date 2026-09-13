@@ -1,4 +1,4 @@
-# Elemental RPG Character Builder
+# Elemental RPG Character Builder (inspired by Genshin Impact)
 
 ## Overview
 
