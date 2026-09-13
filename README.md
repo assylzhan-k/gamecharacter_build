@@ -48,13 +48,13 @@ game_char/
 The Builder Pattern in this project consists of four main parts:
 
 ```text
-Main
+Main(Acts as the client and demonstrates how the Builder Pattern works.)
   │
-CharacterDirector
+CharacterDirector(Contains reusable predefined character configurations.)
   │
-GameCharacterBuilder
+GameCharacterBuilder(Constructs and validates GameCharacter objects.)
   │
-GameCharacter
+GameCharacter(Stores information about the finished character.)
 ```
 ---
 # Builder Pattern Roles
@@ -88,7 +88,7 @@ The character receives its values from the Builder:
 
 `GameCharacterBuilder` is responsible for constructing a character step by step. I created two custom characters(customCharacter1, aki)
 
-Example:
+Example of one character:
 
 ```java
 GameCharacter customCharacter1 =
@@ -105,20 +105,6 @@ GameCharacter customCharacter1 =
                         .setElementalBurst("Kazuha slash")
                         .build();
         System.out.println(customCharacter1);
-        GameCharacter aki =
-                new GameCharacterBuilder()
-                        .setName("aki")
-                        .setElement("cryo")
-                        .setWeaponType("catalyst")
-                        .setLevel(50)
-                        .setHealth(15)
-                        .setAttack(19)
-                        .setDefense(25)
-                        .setArtifactSet("cold night")
-                        .setElementalSkill("sum cryo powerful skill")
-                        .setElementalBurst("freeze!!")
-                        .build();
-        System.out.println(aki);
 ```
 
 The Builder uses a **fluent API**.
@@ -241,45 +227,6 @@ if (level < MIN_LEVEL || level > MAX_LEVEL) {
     );
 }
 ```
----
-
-## Single Responsibility and Focused Classes
-
-Each class has one main responsibility.
-
-### GameCharacter
-
-```text
-Stores information about the finished character.
-```
-
-### GameCharacterBuilder
-
-```text
-Constructs and validates GameCharacter objects.
-```
-
-### CharacterDirector
-
-```text
-Contains reusable predefined character configurations.
-```
-
-### Main
-
-```text
-Acts as the client and demonstrates how the Builder Pattern works.
-```
----
-
-
-# Technologies Used
-
-- Java 17
-- IntelliJ IDEA
-- Git
-- GitHub
-
 ---
 
 # Conclusion
